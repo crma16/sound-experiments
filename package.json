@@ -1,7 +1,7 @@
 {
-  "name": "the-base",
-  "version": "0.0.0",
-  "description": "HKI dev boilerplate",
+  "name": "sound-experiments",
+  "version": "1.0.0",
+  "description": "Website for the creative dev workshop",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/hellohikimori/the-base.git"
+    "url": "git+ssh://git@github.com:crma16/sound-experiments.git"
   },
-  "author": "Valentin Daguenet <valentin.daguenet@gmail.com> (http://vdaguenet.fr)",
+  "author": "Gobelins CRMA 2016",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/hellohikimori/the-base#readme",
+  "homepage": "https://github.com/crma16/sound-experiments",
   "devDependencies": {
     "autoprefixer-stylus": "^0.8.0",
     "babel-core": "^5.8.25",
@@ -37,6 +37,7 @@
     "brindille-resize": "^0.1.3",
     "brindille-scroll": "^0.1.4",
     "brindille-stylus-extends": "0.0.2",
+    "component-css": "0.0.6",
     "component-emitter": "^1.2.0",
     "dom-classes": "0.0.1",
     "dom-event": "0.0.5",

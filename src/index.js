@@ -18,7 +18,8 @@ domready(() => {
     'Home': require('sections/home/Home'),
     'About': require('sections/about/About'),
     /* Components */
-    'component-example': require('components/component-example/ComponentExample'),
+    'Sheet': require('components/sheet/Sheet'),
+    'Note': require('components/note/Note'),
   });
 
   const rootComponent = new Component(document.body);

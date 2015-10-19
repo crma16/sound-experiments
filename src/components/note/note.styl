@@ -1,0 +1,38 @@
+.Note
+  position absolute
+  width 45px
+  height @width
+
+  &-border
+    @extends .full-size
+    position absolute
+    border 1px solid white
+    transition transform 0.5s ease-out-quad
+    transform rotate(45deg) scale(0)
+
+    &--inner
+      width 35px
+      height @width
+      border-color #a09e9e
+      margin 5px
+      transition-delay 0.1s
+
+  &-point
+    position absolute
+    width 14px
+    height @width
+    border-radius 50%
+    background $grey
+    display block
+    cursor pointer
+    transition background 0.5s
+    top 50%
+    left 50%
+    transform translateX(-50%) translateY(-50%)
+
+  &:hover
+    .Note-border
+      transform rotate(45deg) scale(1)
+
+    .Note-point
+      background white

@@ -1,0 +1,14 @@
+<div class="Sheet" data-component="Sheet">
+  <div class="Sheet-line"></div>
+  <div class="Sheet-line"></div>
+  <div class="Sheet-line"></div>
+  <div class="Sheet-line"></div>
+  <div class="Sheet-line"></div>
+
+  <div class="Sheet-note-container">
+    {% for p in projects %}
+      {% include './components/note/note.html' with {'ref': "note-#{loop.index}" } %}
+    {% endfor %}
+  </div>
+
+</div>

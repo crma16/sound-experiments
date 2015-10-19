@@ -89,6 +89,7 @@ class Router
    * On home page
    */
   private function onHomePage() {
-    // Do stuff your page need
+    $projects = file_get_contents(__DIR__ . '/../../data/projects.json');
+    $this->datas['projects'] = json_decode($projects);
   }
 }

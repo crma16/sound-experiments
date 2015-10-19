@@ -12,14 +12,17 @@
 reset()
 @import 'config/*'
 
-html
-body
+html,
+body,
+#view
   @extends .full-size
 
 body
   position relative
   margin 0
-  background #121212
+  background url('/assets/images/background.jpg')
+  background-position 50% 50%
+  background-size cover
   color #DEDEDE
   overflow-x hidden
   overflow-y scroll

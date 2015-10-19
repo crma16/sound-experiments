@@ -7,11 +7,11 @@ export default class Section extends Component {
   }
 
   transitionIn(callback) {
-    TweenMax.fromTo(this.$el, 0.5, { alpha: 0 }, { alpha: 1, onComplete: callback });
+    callback();
     classes.remove(this.$el, 'hidden');
   }
 
   transitionOut(callback) {
-    TweenMax.to(this.$el, 0.5, { alpha: 0, onComplete: callback });
+    callback();
   }
 }
