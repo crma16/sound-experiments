@@ -48,6 +48,7 @@
     "lodash.bindall": "^3.1.0",
     "page": "^1.6.3",
     "stylus-easing": "^1.0.0",
+    "stylus-font-face": "^1.1.0",
     "stylus-media-queries": "^1.0.0",
     "stylus-reset": "0.0.1",
     "webpack": "^1.12.2",

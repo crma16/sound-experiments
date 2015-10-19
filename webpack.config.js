@@ -1,6 +1,7 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer-stylus');
 var path = require('path');
+var fontFace = require('stylus-font-face');
 var webpack = require('webpack');
 
 module.exports = {
@@ -42,7 +43,10 @@ module.exports = {
     },
   },
   stylus: {
-    use: [autoprefixer({ browsers: ['> 5%'] })],
+    use: [
+      autoprefixer({ browsers: ['> 5%'] }),
+      fontFace({ limit: 80000 }),
+    ],
   },
   plugins: [
     new ExtractTextPlugin('main.css'),
