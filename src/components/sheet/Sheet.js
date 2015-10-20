@@ -26,10 +26,15 @@ export default class Sheet extends Component {
 
   onResize() {
     const firstLineTop = -21;
+    const firstLineHeight = 135;
     const secondLineTop = 10;
+    const secondLineHeight = 167;
     const thirdLineTop = 41;
+    const thirdLineHeight = 197;
     const fourthLineTop = 72;
+    const fourthLineHeight = 228;
     const fifthLineTop = 103;
+    const fifthLineHeight = 260;
     const width = this.$container.offsetWidth;
 
     css(this.refs['note-1'].$el, { top: fifthLineTop });
@@ -52,9 +57,29 @@ export default class Sheet extends Component {
     css(this.refs['note-18'].$el, { top: fifthLineTop });
     css(this.refs['note-19'].$el, { top: fourthLineTop });
 
-    for (let i = 0; i < 19; i++) {
-      css(this.refs[`note-${(i+1)}`].$el, { left: 0.053 * i * width });
-    }
+    this.refs['title-1'].setLineHeight(fifthLineHeight);
+    this.refs['title-2'].setLineHeight(fourthLineHeight);
+    this.refs['title-3'].setLineHeight(fourthLineHeight);
+    this.refs['title-4'].setLineHeight(thirdLineHeight);
+    this.refs['title-5'].setLineHeight(thirdLineHeight);
+    this.refs['title-6'].setLineHeight(fifthLineHeight);
+    this.refs['title-7'].setLineHeight(firstLineHeight);
+    this.refs['title-8'].setLineHeight(thirdLineHeight);
+    this.refs['title-9'].setLineHeight(fifthLineHeight);
+    this.refs['title-10'].setLineHeight(secondLineHeight);
+    this.refs['title-11'].setLineHeight(thirdLineHeight);
+    this.refs['title-12'].setLineHeight(fourthLineHeight);
+    this.refs['title-13'].setLineHeight(secondLineHeight);
+    this.refs['title-14'].setLineHeight(fifthLineHeight);
+    this.refs['title-15'].setLineHeight(thirdLineHeight);
+    this.refs['title-16'].setLineHeight(fourthLineHeight);
+    this.refs['title-17'].setLineHeight(thirdLineHeight);
+    this.refs['title-18'].setLineHeight(fifthLineHeight);
+    this.refs['title-19'].setLineHeight(fourthLineHeight);
 
+    for (let i = 0; i < 19; i++) {
+      css(this.refs[`note-${(i + 1)}`].$el, { left: 0.053 * i * width });
+      css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 28 });
+    }
   }
 }

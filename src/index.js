@@ -21,6 +21,7 @@ domready(() => {
     /* Components */
     'Sheet': require('components/sheet/Sheet'),
     'Note': require('components/note/Note'),
+    'ProjectTitle': require('components/project-title/ProjectTitle'),
   });
 
   const rootComponent = new Component(document.body);

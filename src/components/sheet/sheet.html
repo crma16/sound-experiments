@@ -7,6 +7,11 @@
 
   <div class="Sheet-note-container">
     {% for p in projects %}
+      {% include './components/project-title/project-title.html' with {
+        'ref': "title-#{loop.index}",
+        'project': p,
+        'number': loop.index
+      } %}
       {% include './components/note/note.html' with {'ref': "note-#{loop.index}" } %}
     {% endfor %}
   </div>

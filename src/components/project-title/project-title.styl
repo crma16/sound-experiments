@@ -1,0 +1,56 @@
+.ProjectTitle
+  position absolute
+  top -20vh
+
+  &-number,
+  &-text
+    display inline-block
+
+  &-number,
+  &-text-bottom
+    color grey
+
+  &-text
+    margin-left 11px
+
+  &-number
+    @extends .font-serif
+    margin-right 10px
+    font-size 3em
+    position relative
+    bottom 5px
+    width 43px
+    text-align right
+
+  &-text-top
+    text-transform uppercase
+    font-size 0.95em
+    letter-spacing 3px
+    margin-bottom 5px
+
+  &-text-bottom
+    @extends .font-serif-italic
+    font-size 0.8em
+    letter-spacing 2px
+
+    span
+      color white
+      text-transform uppercase
+
+  &-separator
+    position absolute
+    top 6px
+    left 52px
+    width 3px
+    height 38px
+    background white
+    display block
+
+  &-line
+    position absolute
+    top 6px
+    left 50px
+    width 2px
+    height 260px
+    background $grey
+    display block
