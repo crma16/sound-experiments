@@ -45,7 +45,7 @@ export default class Sheet extends Component {
     css(this.refs['note-19'].$el, { top: fourthLineTop });
 
     for (let i = 0; i < 19; i++) {
-      css(this.refs[`note-${(i+1)}`].$el, { left: 0.061 * i * width });
+      css(this.refs[`note-${(i+1)}`].$el, { left: 0.053 * i * width });
     }
 
   }
