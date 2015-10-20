@@ -86,6 +86,13 @@ export default class Component {
    */
   onInit() {}
 
+  replaceContent(content) {
+    let tempNode = document.createElement('div');
+    tempNode.innerHTML = content;
+    this.$el.innerHTML = tempNode.firstChild.innerHTML;
+    this.parse();
+  }
+
   disposeChildren() {
     this._componentInstances.forEach((component) => {
       component.dispose();

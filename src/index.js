@@ -14,6 +14,7 @@ domready(() => {
     /* Layouts */
     'View': require('layouts/view/View'),
     'Header': require('layouts/header/Header'),
+    'Footer': require('layouts/footer/Footer'),
     /* Sections */
     'Home': require('sections/home/Home'),
     'About': require('sections/about/About'),

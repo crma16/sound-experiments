@@ -14,7 +14,15 @@ export default class Sheet extends Component {
     resize.addListener(this.onResize);
   }
 
-  onInit() {}
+  onInit() {
+    this.onResize();
+  }
+
+  destroy() {
+    resize.removeListener(this.onResize);
+
+    super.destroy();
+  }
 
   onResize() {
     const firstLineTop = -21;

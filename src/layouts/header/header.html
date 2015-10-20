@@ -1,3 +1,9 @@
 <header class="Header" data-component="Header">
-  <h1>Header</h1>
+  <h1><span>crma</span> · interactive sound experiments</h1>
+
+  {% if page == "about" %}
+    <a href="/home" class="Header-about">Home</a>
+  {% else %}
+    <a href="/about" class="Header-about">About</a>
+  {% endif %}
 </header>

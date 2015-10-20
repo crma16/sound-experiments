@@ -1,13 +1,21 @@
 import Component from 'lib/components/Component';
+import Mediator from 'lib/Mediator';
+import bindAll from 'lodash.bindAll';
 
 export default class Header extends Component {
   constructor($el) {
     super($el);
 
-    console.log('Header - Construct');
+    bindAll(this, 'onRouteChange');
+
+    Mediator.on('route:change:ready', this.onRouteChange);
   }
 
-  onInit() {
-    console.log('Header - Init');
+  onInit() {}
+
+  onRouteChange(currentPath, currentPageId, content) {
+    if (currentPath === 'home' || currentPath === 'about') {
+      this.replaceContent(content.header);
+    }
   }
 }
