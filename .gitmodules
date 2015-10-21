@@ -1,3 +1,30 @@
 [submodule "public/experiments/valentin"]
 	path = public/experiments/valentin
 	url = https://github.com/vdaguenet/nocturne.git
+[submodule "public/experiments/jordan"]
+	path = public/experiments/jordan
+	url = https://github.com/JordanMachado/op-art-webgl.git
+[submodule "public/experiments/adrien"]
+	path = public/experiments/adrien
+	url = https://github.com/ziiw/workshop-threejs.git
+[submodule "public/experiments/madjid"]
+	path = public/experiments/madjid
+	url = https://github.com/madjidtaha/three-equalizer.git
+[submodule "public/experiments/robin"]
+	path = public/experiments/robin
+	url = https://github.com/robin-dela/workshop-webgl.git
+[submodule "public/experiments/leo"]
+	path = public/experiments/leo
+	url = https://github.com/leobrossault/Three-Workshop.git
+[submodule "public/experiments/soufiane"]
+	path = public/experiments/soufiane
+	url = https://github.com/SoufianeLasri/EqualizR.git
+[submodule "public/experiments/philippe"]
+	path = public/experiments/philippe
+	url = https://github.com/Gnirt/Three-js-experimentation.git
+[submodule "public/experiments/guillaume"]
+	path = public/experiments/guillaume
+	url = https://github.com/guillaumerxl/equalizer.git
+[submodule "public/experiments/antoine"]
+	path = public/experiments/antoine
+	url = https://github.com/AntoineCharbonnier/Workshop-three-js
