@@ -27,9 +27,7 @@ class Router
   public function render()
   {
     if (false === file_exists(__DIR__ . '/' . Config::get('twig', 'viewsDir') . '/sections/'.$this->page.'/'. $this->page.'.html')) {
-      header('HTTP/1.1 404 Not Found', true, 404);
-      echo "Sorry, the page you are looking for could not be found.";
-      exit;
+      $this->notFound();
     }
 
     if ($this->datas['isMobile'] || $this->datas['isTablet']) {
@@ -76,6 +74,9 @@ class Router
       case 'home':
         $this->onHomePage();
         break;
+      case 'project':
+        $this->onProjectPage();
+        break;
     }
   }
 
@@ -95,11 +96,39 @@ class Router
     $this->page = $this->routeInfos[1];
   }
 
+  private function notFound() {
+    header('HTTP/1.1 404 Not Found', true, 404);
+    echo "Sorry, the page you are looking for could not be found.";
+    exit;
+  }
+
   /**
    * On home page
    */
   private function onHomePage() {
     $projects = file_get_contents(__DIR__ . '/../../data/projects.json');
     $this->datas['projects'] = json_decode($projects);
+  }
+
+  /**
+   * On project page
+   */
+  private function onProjectPage() {
+    if (false === isset($this->routeInfos[2])) return;
+
+    $id = $this->routeInfos[2];
+    $projects = json_decode(file_get_contents(__DIR__ . '/../../data/projects.json'));
+
+    foreach ($projects as $p) {
+      if ($p->id === $id) {
+        $project = $p;
+      }
+    }
+
+    if (false === isset($project)) {
+      $this->notFound();
+    }
+
+    $this->datas['project'] = $project;
   }
 }

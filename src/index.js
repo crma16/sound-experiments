@@ -18,6 +18,7 @@ domready(() => {
     /* Sections */
     'Home': require('sections/home/Home'),
     'About': require('sections/about/About'),
+    'Project': require('sections/project/Project'),
     /* Components */
     'Sheet': require('components/sheet/Sheet'),
     'Note': require('components/note/Note'),
@@ -31,6 +32,7 @@ domready(() => {
   let router = new Router([
     'home',
     'about',
+    'project/:name',
   ]);
 
 });
