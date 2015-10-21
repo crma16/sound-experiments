@@ -32,6 +32,10 @@ class Router
       exit;
     }
 
+    if ($this->datas['isMobile'] || $this->datas['isTablet']) {
+      return $this->twigInstance->render('sections/fallback/fallback-mobile.html', $this->datas);
+    }
+
     if (($this->datas['isIE'] && $this->datas['IEVersion'] < 11.0) || isset($_GET['fallback'])) {
       return $this->twigInstance->render('sections/fallback/fallback.html', $this->datas);
     }

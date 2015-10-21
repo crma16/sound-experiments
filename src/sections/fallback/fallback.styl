@@ -3,6 +3,10 @@
   position relative
   top 40%
 
+  +max-screen(1024px)
+    top 50%
+    transform translateY(-50%)
+
   h1
     letter-spacing 5px
 
@@ -17,3 +21,9 @@
     color $grey
     letter-spacing 3px
     text-transform uppercase
+
+  svg
+    fill white
+
+  svg use
+    fill inherit
