@@ -32,6 +32,10 @@ class Router
       exit;
     }
 
+    if (($this->datas['isIE'] && $this->datas['IEVersion'] < 11.0) || isset($_GET['fallback'])) {
+      return $this->twigInstance->render('sections/fallback/fallback.html', $this->datas);
+    }
+
     if ($this->isPartial) {
       $page = $this->twigInstance->render('sections/'.$this->page.'/'. $this->page.'.html', $this->datas);
       $header = $this->twigInstance->render('layouts/header/header.html', $this->datas);
