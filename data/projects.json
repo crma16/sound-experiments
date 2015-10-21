@@ -4,35 +4,35 @@
     "name": "Lorem ipsum",
     "author": "Ludovic ATMADJIAN",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/ludovic"
   },
   {
     "id": "mathis",
     "name": "Lorem ipsum",
     "author": "Mathis BIABIANY",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/mathis"
   },
   {
     "id": "jeremie-b",
     "name": "Lorem ipsum",
     "author": "Jérémie BOULAY",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/jeremie-b"
   },
   {
     "id": "leo",
     "name": "Lorem ipsum",
     "author": "Léo BROSSAULT",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/leo"
   },
   {
     "id": "antoine",
     "name": "Lorem ipsum",
     "author": "Antoine CHARBONNIER",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/antoine/public"
   },
   {
     "id": "valentin",
@@ -46,90 +46,90 @@
     "name": "Lorem ipsum",
     "author": "Robin DELAPORTE",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/robin"
   },
   {
     "id": "jeremie-d",
     "name": "Lorem ipsum",
     "author": "Jérémie DRAZIC",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/jeremie-d"
   },
   {
     "id": "kevin",
     "name": "Lorem ipsum",
     "author": "Kévin HANIR",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/kevin"
   },
   {
     "id": "chloe",
     "name": "Lorem ipsum",
     "author": "Chloé HENAUT",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/chloe"
   },
   {
     "id": "soufiane",
     "name": "Lorem ipsum",
     "author": "Soufiane LASRI",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/soufiane/dist"
   },
   {
     "id": "adrien",
     "name": "Lorem ipsum",
     "author": "Adrien LAVISIERA",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/adrien"
   },
   {
     "id": "jordan",
     "name": "Lorem ipsum",
     "author": "Jordan MACHADO",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/jordan"
   },
   {
     "id": "diana",
     "name": "Lorem ipsum",
     "author": "Diana MARCHAL",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/diana"
   },
   {
     "id": "nathalie",
     "name": "Lorem ipsum",
     "author": "Nathalie MARCHAL",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/nathalie"
   },
   {
     "id": "arthur",
     "name": "Lorem ipsum",
     "author": "Arthur ROBERT",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/arthur"
   },
   {
     "id": "guillaume",
     "name": "Lorem ipsum",
     "author": "Guillaume ROUXEL",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/guillaume/public"
   },
   {
     "id": "madjid",
     "name": "Lorem ipsum",
     "author": "Madjid TAHA",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/madjid"
   },
   {
     "id": "philippe",
     "name": "Lorem ipsum",
     "author": "Philippe TRING",
     "color": "#e0025b",
-    "url": "path/to/xp"
+    "url": "/experiments/philippe"
   }
 ]
