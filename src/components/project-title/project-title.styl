@@ -2,26 +2,31 @@
   position absolute
   top -20vh
   width 384px
+  height 54px
 
-  &-number,
+  &-number-container,
   &-text
     display inline-block
 
-  &-number,
+  &-number-container,
   &-text-bottom
     color grey
 
-  &-text
-    margin-left 11px
-
-  &-number
+  &-number-container
     @extends .font-serif
-    margin-right 10px
+    height 100%
     font-size 3em
-    position relative
-    bottom 5px
+    overflow hidden
     width 43px
+    position relative
+    // bottom 5px
+    margin-right 10px
     text-align right
+
+  &-text
+    overflow hidden
+    margin-left 11px
+    height 82%
 
   &-text-top
     text-transform uppercase
@@ -46,6 +51,8 @@
     height 38px
     background white
     display block
+    transform-origin center bottom
+    transform scaleY(0)
 
   &-line
     position absolute
@@ -55,6 +62,8 @@
     height 260px
     background $grey
     display block
+    transform-origin center bottom
+    transform scaleY(0)
 
 .ProjectTitle.reverse
   .ProjectTitle-text

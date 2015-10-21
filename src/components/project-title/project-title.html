@@ -6,12 +6,16 @@
       <div class="ProjectTitle-text-bottom">composed by <span>{{ project.author }}<span></div>
     </div>
     <div class="ProjectTitle-separator" style="background: {{ project.color }};"></div>
-    <div class="ProjectTitle-number">{{ number }}</div>
+    <div class="ProjectTitle-number-container">
+      <div class="ProjectTitle-number">{{ number }}</div>
+    </div>
     <div class="ProjectTitle-line"></div>
 
   {% else %}
 
-    <div class="ProjectTitle-number">{{ number }}</div>
+    <div class="ProjectTitle-number-container">
+      <div class="ProjectTitle-number">{{ number }}</div>
+    </div>
     <div class="ProjectTitle-separator" style="background: {{ project.color }};"></div>
     <div class="ProjectTitle-text">
       <div class="ProjectTitle-text-top" style="color: {{ project.color }};">{{ project.name }}</div>

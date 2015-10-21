@@ -1,4 +1,5 @@
 import Component from 'lib/components/Component';
+import Mediator from 'lib/Mediator';
 import bindAll from 'lodash.bindAll';
 import resize from 'brindille-resize';
 import css from 'component-css';
@@ -7,11 +8,13 @@ export default class Sheet extends Component {
   constructor($el) {
     super($el);
 
-    bindAll(this, 'onResize');
+    bindAll(this, 'onResize', 'onNoteOver', 'onNoteOut');
 
     this.$container = this.$el.querySelector('.Sheet-note-container');
 
     resize.addListener(this.onResize);
+    Mediator.on('note:over', this.onNoteOver);
+    Mediator.on('note:out', this.onNoteOut);
   }
 
   onInit() {
@@ -24,14 +27,38 @@ export default class Sheet extends Component {
     super.destroy();
   }
 
+  onNoteOver(id) {
+    this.refs[`title-${id}`].show();
+  }
+
+  onNoteOut(id) {
+    this.refs[`title-${id}`].hide();
+  }
+
   onResize() {
+    const width = this.$container.offsetWidth;
+    let h = 0;
+
+    this.setNotesTop();
+
+    for (let i = 0; i < 19; i++) {
+      h = this.refs[`note-${(i + 1)}`].$point.getBoundingClientRect().top - this.refs[`title-${(i + 1)}`].$el.getBoundingClientRect().top;
+      css(this.refs[`note-${(i + 1)}`].$el, { left: 0.053 * i * width });
+      if (i >= 15) {
+        css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 310 });
+      } else {
+        css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 28 });
+      }
+      this.refs[`title-${(i + 1)}`].setLineHeight(h);
+    }
+  }
+
+  setNotesTop() {
     const firstLineTop = -21;
     const secondLineTop = 10;
     const thirdLineTop = 41;
     const fourthLineTop = 72;
     const fifthLineTop = 103;
-    const width = this.$container.offsetWidth;
-    let h = 0;
 
     css(this.refs['note-1'].$el, { top: fifthLineTop });
     css(this.refs['note-2'].$el, { top: fourthLineTop });
@@ -52,16 +79,5 @@ export default class Sheet extends Component {
     css(this.refs['note-17'].$el, { top: thirdLineTop });
     css(this.refs['note-18'].$el, { top: fifthLineTop });
     css(this.refs['note-19'].$el, { top: fourthLineTop });
-
-    for (let i = 0; i < 19; i++) {
-      h = this.refs[`note-${(i + 1)}`].$point.getBoundingClientRect().top - this.refs[`title-${(i + 1)}`].$el.getBoundingClientRect().top;
-      css(this.refs[`note-${(i + 1)}`].$el, { left: 0.053 * i * width });
-      if (i >= 15) {
-        css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 310 });
-      } else {
-        css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 28 });
-      }
-      this.refs[`title-${(i + 1)}`].setLineHeight(h);
-    }
   }
 }
