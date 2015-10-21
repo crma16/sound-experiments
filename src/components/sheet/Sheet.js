@@ -56,7 +56,11 @@ export default class Sheet extends Component {
     for (let i = 0; i < 19; i++) {
       h = this.refs[`note-${(i + 1)}`].$point.getBoundingClientRect().top - this.refs[`title-${(i + 1)}`].$el.getBoundingClientRect().top;
       css(this.refs[`note-${(i + 1)}`].$el, { left: 0.053 * i * width });
-      css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 28 });
+      if (i >= 15) {
+        css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 310 });
+      } else {
+        css(this.refs[`title-${(i + 1)}`].$el, { left: 0.053 * i * width - 28 });
+      }
       this.refs[`title-${(i + 1)}`].setLineHeight(h);
     }
   }

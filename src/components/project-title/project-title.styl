@@ -1,6 +1,7 @@
 .ProjectTitle
   position absolute
   top -20vh
+  width 384px
 
   &-number,
   &-text
@@ -54,3 +55,23 @@
     height 260px
     background $grey
     display block
+
+.ProjectTitle.reverse
+  .ProjectTitle-text
+    width calc(100% - 64px)
+    position relative
+    top 9px
+    margin-left 0
+    text-align right
+
+  .ProjectTitle-number
+    margin-right 0
+    float right
+
+  .ProjectTitle-separator
+    left initial
+    right 52px
+
+  .ProjectTitle-line
+    left initial
+    right 50px
