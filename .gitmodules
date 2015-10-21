@@ -1,0 +1,3 @@
+[submodule "public/experiments/valentin"]
+	path = public/experiments/valentin
+	url = https://github.com/vdaguenet/nocturne.git
