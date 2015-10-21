@@ -28,3 +28,6 @@
 [submodule "public/experiments/antoine"]
 	path = public/experiments/antoine
 	url = https://github.com/AntoineCharbonnier/Workshop-three-js
+[submodule "public/experiments/mathis"]
+	path = public/experiments/mathis
+	url = https://github.com/mats31/Equalizer-Galaxy.git
