@@ -37,3 +37,6 @@
 [submodule "public/experiments/chloe"]
 	path = public/experiments/chloe
 	url = https://github.com/kuroeery/webgl-exp.git
+[submodule "public/experiments/jeremie-b"]
+	path = public/experiments/jeremie-b
+	url = https://github.com/Jeremboo/shootingStarEqualizer.git

@@ -15,10 +15,10 @@
   },
   {
     "id": "jeremie-b",
-    "name": "Lorem ipsum",
+    "name": "Shooting Star Equalizer",
     "author": "Jérémie BOULAY",
     "color": "#e0025b",
-    "url": "/experiments/jeremie-b"
+    "url": "/experiments/jeremie-b/public"
   },
   {
     "id": "leo",
@@ -29,7 +29,7 @@
   },
   {
     "id": "antoine",
-    "name": "Lorem ipsum",
+    "name": "ODESZA",
     "author": "Antoine CHARBONNIER",
     "color": "#e0025b",
     "url": "/experiments/antoine/public"
@@ -92,7 +92,7 @@
   },
   {
     "id": "diana",
-    "name": "Lorem ipsum",
+    "name": "Music DNA",
     "author": "Diana MARCHAL",
     "color": "#e0025b",
     "url": "/experiments/diana"
