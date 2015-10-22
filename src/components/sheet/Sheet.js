@@ -31,11 +31,16 @@ export default class Sheet extends Component {
     this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0.1);
     this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.8);
     this.tl.pause(0);
+  }
 
+  parse() {
+    super.parse();
   }
 
   destroy() {
     resize.removeListener(this.onResize);
+    Mediator.off('note:over', this.onNoteOver);
+    Mediator.off('note:out', this.onNoteOut);
 
     super.destroy();
   }
