@@ -31,3 +31,6 @@
 [submodule "public/experiments/mathis"]
 	path = public/experiments/mathis
 	url = https://github.com/mats31/Equalizer-Galaxy.git
+[submodule "public/experiments/nathalie"]
+	path = public/experiments/nathalie
+	url = https://github.com/nathoum/equalizerWorkShop.git
