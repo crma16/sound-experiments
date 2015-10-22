@@ -41,7 +41,6 @@ export default class Sheet extends Component {
   }
 
   transitionIn() {
-    console.log('transition in');
     this.tl.play(0);
   }
 

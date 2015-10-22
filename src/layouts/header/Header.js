@@ -8,6 +8,8 @@ export default class Header extends Component {
 
     bindAll(this, 'onRouteChange', 'transitionIn');
 
+    this.visible = false;
+
     this.$h1 = this.$el.querySelector('h1');
     this.$about = this.$el.querySelector('.Header-about');
 
@@ -22,7 +24,10 @@ export default class Header extends Component {
   onInit() {}
 
   transitionIn() {
+    if (this.visible) { return; }
+
     this.tl.play(0);
+    this.visible = true;
   }
 
   onRouteChange(currentPath, currentPageId, content) {
