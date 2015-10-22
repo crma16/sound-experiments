@@ -10,21 +10,39 @@ export default class Sheet extends Component {
 
     bindAll(this, 'onResize', 'onNoteOver', 'onNoteOut');
 
+    this.$lines;
+    this.$notes;
     this.$container = this.$el.querySelector('.Sheet-note-container');
 
     resize.addListener(this.onResize);
     Mediator.on('note:over', this.onNoteOver);
     Mediator.on('note:out', this.onNoteOut);
+
+    this.tl = new TimelineMax();
+
   }
 
   onInit() {
     this.onResize();
+
+    this.$lines = this.$el.querySelectorAll('.Sheet-line');
+    this.$notes = this.$el.querySelectorAll('.Note-point');
+
+    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0.1);
+    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.8);
+    this.tl.pause(0);
+
   }
 
   destroy() {
     resize.removeListener(this.onResize);
 
     super.destroy();
+  }
+
+  transitionIn() {
+    console.log('transition in');
+    this.tl.play(0);
   }
 
   onNoteOver(id) {

@@ -1,13 +1,17 @@
 import Section from 'lib/components/Section';
+import Mediator from 'lib/Mediator';
 
 export default class Home extends Section {
   constructor($el) {
     super($el);
-
-    console.log('Home - Construct');
   }
 
-  onInit() {
-    console.log('Home - Init');
+  onInit() {}
+
+  transitionIn(callback) {
+    super.transitionIn(callback);
+    this.refs.sheet.transitionIn();
+    Mediator.emit('header:transitionIn');
+    Mediator.emit('footer:transitionIn');
   }
 }
