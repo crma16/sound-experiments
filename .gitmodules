@@ -40,3 +40,6 @@
 [submodule "public/experiments/jeremie-b"]
 	path = public/experiments/jeremie-b
 	url = https://github.com/Jeremboo/shootingStarEqualizer.git
+[submodule "public/experiments/diana"]
+	path = public/experiments/diana
+	url = https://github.com/dianamar/threejsexperiment.git
