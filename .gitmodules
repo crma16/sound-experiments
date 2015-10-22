@@ -34,3 +34,6 @@
 [submodule "public/experiments/nathalie"]
 	path = public/experiments/nathalie
 	url = https://github.com/nathoum/equalizerWorkShop.git
+[submodule "public/experiments/chloe"]
+	path = public/experiments/chloe
+	url = https://github.com/kuroeery/webgl-exp.git
