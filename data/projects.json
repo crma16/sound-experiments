@@ -3,133 +3,133 @@
     "id": "ludovic",
     "name": "Lorem ipsum",
     "author": "Ludovic ATMADJIAN",
-    "color": "#e0025b",
+    "color": "#006962",
     "url": "/experiments/ludovic"
   },
   {
     "id": "mathis",
     "name": "Lorem ipsum",
     "author": "Mathis BIABIANY",
-    "color": "#e0025b",
+    "color": "#EA9D25",
     "url": "/experiments/mathis"
   },
   {
     "id": "jeremie-b",
     "name": "Shooting Star Equalizer",
     "author": "Jérémie BOULAY",
-    "color": "#e0025b",
+    "color": "#E2413E",
     "url": "/experiments/jeremie-b/public"
   },
   {
     "id": "leo",
     "name": "Lorem ipsum",
     "author": "Léo BROSSAULT",
-    "color": "#e0025b",
+    "color": "#1488C8",
     "url": "/experiments/leo"
   },
   {
     "id": "antoine",
     "name": "ODESZA",
     "author": "Antoine CHARBONNIER",
-    "color": "#e0025b",
+    "color": "#E91222",
     "url": "/experiments/antoine/public"
   },
   {
     "id": "valentin",
     "name": "Lorem ipsum",
     "author": "Valentin DAGUENET",
-    "color": "#e0025b",
+    "color": "#59D8D5",
     "url": "/experiments/valentin"
   },
   {
     "id": "robin",
     "name": "Lorem ipsum",
     "author": "Robin DELAPORTE",
-    "color": "#e0025b",
+    "color": "#42BBC9",
     "url": "/experiments/robin"
   },
   {
     "id": "jeremie-d",
     "name": "Lorem ipsum",
     "author": "Jérémie DRAZIC",
-    "color": "#e0025b",
+    "color": "#FC7D74",
     "url": "/experiments/jeremie-d"
   },
   {
     "id": "kevin",
     "name": "Lorem ipsum",
     "author": "Kévin HANIR",
-    "color": "#e0025b",
+    "color": "#B65E29",
     "url": "/experiments/kevin"
   },
   {
     "id": "chloe",
     "name": "Lorem ipsum",
     "author": "Chloé HENAUT",
-    "color": "#e0025b",
+    "color": "#26A65B",
     "url": "/experiments/chloe"
   },
   {
     "id": "soufiane",
     "name": "Lorem ipsum",
     "author": "Soufiane LASRI",
-    "color": "#e0025b",
+    "color": "#8706FF",
     "url": "/experiments/soufiane/dist"
   },
   {
     "id": "adrien",
     "name": "Lorem ipsum",
     "author": "Adrien LAVISIERA",
-    "color": "#e0025b",
+    "color": "#6D70D0",
     "url": "/experiments/adrien"
   },
   {
     "id": "jordan",
     "name": "Lorem ipsum",
     "author": "Jordan MACHADO",
-    "color": "#e0025b",
+    "color": "#1F518B",
     "url": "/experiments/jordan"
   },
   {
     "id": "diana",
     "name": "Music DNA",
     "author": "Diana MARCHAL",
-    "color": "#e0025b",
+    "color": "#1E824C",
     "url": "/experiments/diana"
   },
   {
     "id": "nathalie",
     "name": "Micro Cosmic scale",
     "author": "Nathalie MARCHAL",
-    "color": "#e0025b",
+    "color": "#F47D38",
     "url": "/experiments/nathalie"
   },
   {
     "id": "arthur",
     "name": "Lorem ipsum",
     "author": "Arthur ROBERT",
-    "color": "#e0025b",
+    "color": "#CFBA7A",
     "url": "/experiments/arthur"
   },
   {
     "id": "guillaume",
     "name": "Lorem ipsum",
     "author": "Guillaume ROUXEL",
-    "color": "#e0025b",
+    "color": "#E25CFE",
     "url": "/experiments/guillaume/public"
   },
   {
     "id": "madjid",
     "name": "Lorem ipsum",
     "author": "Madjid TAHA",
-    "color": "#e0025b",
+    "color": "#EE2378",
     "url": "/experiments/madjid"
   },
   {
     "id": "philippe",
     "name": "Lorem ipsum",
     "author": "Philippe TRING",
-    "color": "#e0025b",
+    "color": "#81C82D",
     "url": "/experiments/philippe"
   }
 ]
