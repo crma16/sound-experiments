@@ -41,9 +41,11 @@ class Router
     if ($this->isPartial) {
       $page = $this->twigInstance->render('sections/'.$this->page.'/'. $this->page.'.html', $this->datas);
       $header = $this->twigInstance->render('layouts/header/header.html', $this->datas);
+      $footer = $this->twigInstance->render('layouts/footer/footer.html', $this->datas);
       $compiledViews = [
         'page' => $page,
-        'header' => $header
+        'header' => $header,
+        'footer' => $footer,
       ];
 
       return json_encode($compiledViews);

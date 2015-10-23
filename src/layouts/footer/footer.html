@@ -1,3 +1,16 @@
 <footer class="Footer" data-component="Footer">
-  2016 by interactive developers from <a href="http://www.gobelins.fr/" target="_blank">Gobelins</a>
+  <ul class="Footer-social">
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://workshop.crma2015.gobelins.fr/" target="_blank">
+      <svg><use xlink:href="#facebook"></use></svg>
+    </a></li>
+    <li><a href="https://twitter.com/intent/tweet?text=CRMA+Interactive+sound+experiments&url=http://workshop.crma2015.gobelins.fr/" target="_blank">
+      <svg><use xlink:href="#twitter"></use></svg>
+    </a></li>
+  </ul>
+
+  {% if page == "about" %}
+    <a href="/home" class="Footer-about">Home</a>
+  {% else %}
+    <a href="/about" class="Footer-about">About</a>
+  {% endif %}
 </footer>
