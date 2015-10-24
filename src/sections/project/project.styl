@@ -1,5 +1,36 @@
 .Project
   @extends .full-size
+  position relative
+  z-index 2
+
+  &-close
+    width 25px
+    height 25px
+    position absolute
+    display block
+    top 30px
+    right 30px
+    cursor pointer
+
+    a
+      @extends .full-size
+      display block
+
+    &-line
+      display block
+      width 100%
+      height 3px
+      background white
+      position absolute
+      top 50%
+
+      &--first
+        transform translateY(-50%) rotate(45deg)
+
+      &--second
+        transform translateY(-50%) rotate(-45deg)
 
   iframe
-    @extends .full-size
+    width calc(100% - 40px)
+    height calc(100% - 40px)
+    margin 20px
