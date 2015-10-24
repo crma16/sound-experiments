@@ -1,0 +1,45 @@
+[submodule "data/experiments/mathis"]
+	path = data/experiments/mathis
+	url = https://github.com/mats31/Equalizer-Galaxy.git
+[submodule "data/experiments/jeremie-b"]
+	path = data/experiments/jeremie-b
+	url = https://github.com/Jeremboo/shootingStarEqualizer.git
+[submodule "data/experiments/leo"]
+	path = data/experiments/leo
+	url = https://github.com/leobrossault/Three-Workshop.git
+[submodule "data/experiments/antoine"]
+	path = data/experiments/antoine
+	url = https://github.com/AntoineCharbonnier/Workshop-three-js
+[submodule "data/experiments/valentin"]
+	path = data/experiments/valentin
+	url = https://github.com/vdaguenet/nocturne.git
+[submodule "data/experiments/robin"]
+	path = data/experiments/robin
+	url = https://github.com/robin-dela/workshop-webgl.git
+[submodule "data/experiments/chloe"]
+	path = data/experiments/chloe
+	url = https://github.com/kuroeery/webgl-exp.git
+[submodule "data/experiments/soufiane"]
+	path = data/experiments/soufiane
+	url = https://github.com/SoufianeLasri/EqualizR.git
+[submodule "data/experiments/adrien"]
+	path = data/experiments/adrien
+	url = https://github.com/ziiw/workshop-threejs.git
+[submodule "data/experiments/jordan"]
+	path = data/experiments/jordan
+	url = https://github.com/JordanMachado/op-art-webgl.git
+[submodule "data/experiments/diana"]
+	path = data/experiments/diana
+	url = https://github.com/dianamar/threejsexperiment.git
+[submodule "data/experiments/nathalie"]
+	path = data/experiments/nathalie
+	url = https://github.com/nathoum/equalizerWorkShop.git
+[submodule "data/experiments/guillaume"]
+	path = data/experiments/guillaume
+	url = https://github.com/guillaumerxl/equalizer.git
+[submodule "data/experiments/madjid"]
+	path = data/experiments/madjid
+	url = https://github.com/madjidtaha/three-equalizer.git
+[submodule "data/experiments/philippe"]
+	path = data/experiments/philippe
+	url = https://github.com/Gnirt/Three-js-experimentation.git
