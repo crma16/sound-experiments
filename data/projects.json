@@ -11,42 +11,48 @@
     "name": "Lorem ipsum",
     "author": "Mathis BIABIANY",
     "color": "#EA9D25",
-    "url": "/experiments/mathis"
+    "url": "/experiments/mathis",
+    "git": "https://github.com/mats31/Equalizer-Galaxy.git"
   },
   {
     "id": "jeremie-b",
     "name": "Shooting Star Equalizer",
     "author": "Jérémie BOULAY",
     "color": "#E2413E",
-    "url": "/experiments/jeremie-b/public"
+    "url": "/experiments/jeremie-b/public",
+    "git": "https://github.com/Jeremboo/shootingStarEqualizer.git"
   },
   {
     "id": "leo",
     "name": "Lorem ipsum",
     "author": "Léo BROSSAULT",
     "color": "#1488C8",
-    "url": "/experiments/leo"
+    "url": "/experiments/leo",
+    "git": "https://github.com/leobrossault/Three-Workshop.git"
   },
   {
     "id": "antoine",
     "name": "ODESZA",
     "author": "Antoine CHARBONNIER",
     "color": "#E91222",
-    "url": "/experiments/antoine/public"
+    "url": "/experiments/antoine/public",
+    "git": "https://github.com/AntoineCharbonnier/Workshop-three-js"
   },
   {
     "id": "valentin",
-    "name": "Lorem ipsum",
+    "name": "Nocturne",
     "author": "Valentin DAGUENET",
     "color": "#59D8D5",
-    "url": "/experiments/valentin"
+    "url": "/experiments/valentin",
+    "git": "https://github.com/vdaguenet/nocturne.git"
   },
   {
     "id": "robin",
     "name": "Lorem ipsum",
     "author": "Robin DELAPORTE",
     "color": "#42BBC9",
-    "url": "/experiments/robin"
+    "url": "/experiments/robin",
+    "git": "https://github.com/robin-dela/workshop-webgl.git"
   },
   {
     "id": "jeremie-d",
@@ -67,42 +73,48 @@
     "name": "Lorem ipsum",
     "author": "Chloé HENAUT",
     "color": "#26A65B",
-    "url": "/experiments/chloe"
+    "url": "/experiments/chloe",
+    "git": "https://github.com/kuroeery/webgl-exp.git"
   },
   {
     "id": "soufiane",
-    "name": "Lorem ipsum",
+    "name": "EqualizR",
     "author": "Soufiane LASRI",
     "color": "#8706FF",
-    "url": "/experiments/soufiane/dist"
+    "url": "/experiments/soufiane/dist",
+    "git": "https://github.com/SoufianeLasri/EqualizR.git"
   },
   {
     "id": "adrien",
     "name": "Lorem ipsum",
     "author": "Adrien LAVISIERA",
     "color": "#6D70D0",
-    "url": "/experiments/adrien"
+    "url": "/experiments/adrien",
+    "git": "https://github.com/ziiw/workshop-threejs.git"
   },
   {
     "id": "jordan",
-    "name": "Lorem ipsum",
+    "name": "Op Art",
     "author": "Jordan MACHADO",
     "color": "#1F518B",
-    "url": "/experiments/jordan"
+    "url": "/experiments/jordan",
+    "git": "https://github.com/JordanMachado/op-art-webgl.git",
   },
   {
     "id": "diana",
     "name": "Music DNA",
     "author": "Diana MARCHAL",
     "color": "#1E824C",
-    "url": "/experiments/diana"
+    "url": "/experiments/diana",
+    "git": "https://github.com/dianamar/threejsexperiment.git"
   },
   {
     "id": "nathalie",
     "name": "Micro Cosmic scale",
     "author": "Nathalie MARCHAL",
     "color": "#F47D38",
-    "url": "/experiments/nathalie"
+    "url": "/experiments/nathalie",
+    "git": "https://github.com/nathoum/equalizerWorkShop.git"
   },
   {
     "id": "arthur",
@@ -116,20 +128,23 @@
     "name": "Lorem ipsum",
     "author": "Guillaume ROUXEL",
     "color": "#E25CFE",
-    "url": "/experiments/guillaume/public"
+    "url": "/experiments/guillaume/public",
+    "git": "https://github.com/guillaumerxl/equalizer.git"
   },
   {
     "id": "madjid",
     "name": "Lorem ipsum",
     "author": "Madjid TAHA",
     "color": "#EE2378",
-    "url": "/experiments/madjid"
+    "url": "/experiments/madjid",
+    "git": "https://github.com/madjidtaha/three-equalizer.git"
   },
   {
     "id": "philippe",
     "name": "Lorem ipsum",
     "author": "Philippe TRING",
     "color": "#81C82D",
-    "url": "/experiments/philippe"
+    "url": "/experiments/philippe",
+    "git": "https://github.com/Gnirt/Three-js-experimentation.git"
   }
 ]
