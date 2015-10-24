@@ -12,7 +12,9 @@
         'project': p,
         'number': loop.index
       } %}
-      {% include './components/note/note.html' with {'ref': "note-#{loop.index}" } %}
+      <a href="/project/{{ p.id }}">
+        {% include './components/note/note.html' with {'ref': "note-#{loop.index}" } %}
+      </a>
     {% endfor %}
   </div>
 

@@ -4,14 +4,14 @@
     "name": "Lorem ipsum",
     "author": "Ludovic ATMADJIAN",
     "color": "#006962",
-    "url": "/experiments/ludovic"
+    "path": "/experiments/ludovic"
   },
   {
     "id": "mathis",
     "name": "Lorem ipsum",
     "author": "Mathis BIABIANY",
     "color": "#EA9D25",
-    "url": "/experiments/mathis",
+    "path": "/experiments/mathis",
     "git": "https://github.com/mats31/Equalizer-Galaxy.git"
   },
   {
@@ -19,7 +19,7 @@
     "name": "Shooting Star Equalizer",
     "author": "Jérémie BOULAY",
     "color": "#E2413E",
-    "url": "/experiments/jeremie-b",
+    "path": "/experiments/jeremie-b",
     "git": "https://github.com/Jeremboo/shootingStarEqualizer.git"
   },
   {
@@ -27,7 +27,7 @@
     "name": "Lorem ipsum",
     "author": "Léo BROSSAULT",
     "color": "#1488C8",
-    "url": "/experiments/leo",
+    "path": "/experiments/leo",
     "git": "https://github.com/leobrossault/Three-Workshop.git"
   },
   {
@@ -35,7 +35,7 @@
     "name": "ODESZA",
     "author": "Antoine CHARBONNIER",
     "color": "#E91222",
-    "url": "/experiments/antoine",
+    "path": "/experiments/antoine",
     "git": "https://github.com/AntoineCharbonnier/Workshop-three-js"
   },
   {
@@ -43,7 +43,7 @@
     "name": "Nocturne",
     "author": "Valentin DAGUENET",
     "color": "#59D8D5",
-    "url": "/experiments/valentin",
+    "path": "/experiments/valentin",
     "git": "https://github.com/vdaguenet/nocturne.git"
   },
   {
@@ -51,7 +51,7 @@
     "name": "Lorem ipsum",
     "author": "Robin DELAPORTE",
     "color": "#42BBC9",
-    "url": "/experiments/robin",
+    "path": "/experiments/robin",
     "git": "https://github.com/robin-dela/workshop-webgl.git"
   },
   {
@@ -59,21 +59,21 @@
     "name": "Lorem ipsum",
     "author": "Jérémie DRAZIC",
     "color": "#FC7D74",
-    "url": "/experiments/jeremie-d"
+    "path": "/experiments/jeremie-d"
   },
   {
     "id": "kevin",
     "name": "Lorem ipsum",
     "author": "Kévin HANIR",
     "color": "#B65E29",
-    "url": "/experiments/kevin"
+    "path": "/experiments/kevin"
   },
   {
     "id": "chloe",
     "name": "Lorem ipsum",
     "author": "Chloé HENAUT",
     "color": "#26A65B",
-    "url": "/experiments/chloe",
+    "path": "/experiments/chloe",
     "git": "https://github.com/kuroeery/webgl-exp.git"
   },
   {
@@ -81,7 +81,7 @@
     "name": "EqualizR",
     "author": "Soufiane LASRI",
     "color": "#8706FF",
-    "url": "/experiments/soufiane",
+    "path": "/experiments/soufiane",
     "git": "https://github.com/SoufianeLasri/EqualizR.git"
   },
   {
@@ -89,7 +89,7 @@
     "name": "Lorem ipsum",
     "author": "Adrien LAVISIERA",
     "color": "#6D70D0",
-    "url": "/experiments/adrien",
+    "path": "/experiments/adrien",
     "git": "https://github.com/ziiw/workshop-threejs.git"
   },
   {
@@ -97,15 +97,15 @@
     "name": "Op Art",
     "author": "Jordan MACHADO",
     "color": "#1F518B",
-    "url": "/experiments/jordan",
-    "git": "https://github.com/JordanMachado/op-art-webgl.git",
+    "path": "/experiments/jordan",
+    "git": "https://github.com/JordanMachado/op-art-webgl.git"
   },
   {
     "id": "diana",
     "name": "Music DNA",
     "author": "Diana MARCHAL",
     "color": "#1E824C",
-    "url": "/experiments/diana",
+    "path": "/experiments/diana",
     "git": "https://github.com/dianamar/threejsexperiment.git"
   },
   {
@@ -113,7 +113,7 @@
     "name": "Micro Cosmic scale",
     "author": "Nathalie MARCHAL",
     "color": "#F47D38",
-    "url": "/experiments/nathalie",
+    "path": "/experiments/nathalie",
     "git": "https://github.com/nathoum/equalizerWorkShop.git"
   },
   {
@@ -121,22 +121,22 @@
     "name": "Lorem ipsum",
     "author": "Arthur ROBERT",
     "color": "#CFBA7A",
-    "url": "/experiments/arthur"
+    "path": "/experiments/arthur"
   },
   {
     "id": "guillaume",
     "name": "Lorem ipsum",
     "author": "Guillaume ROUXEL",
     "color": "#E25CFE",
-    "url": "/experiments/guillaume",
+    "path": "/experiments/guillaume",
     "git": "https://github.com/guillaumerxl/equalizer.git"
   },
   {
     "id": "madjid",
-    "name": "Lorem ipsum",
+    "name": "Musical foetus",
     "author": "Madjid TAHA",
     "color": "#EE2378",
-    "url": "/experiments/madjid",
+    "path": "/experiments/madjid",
     "git": "https://github.com/madjidtaha/three-equalizer.git"
   },
   {
@@ -144,7 +144,7 @@
     "name": "Lorem ipsum",
     "author": "Philippe TRING",
     "color": "#81C82D",
-    "url": "/experiments/philippe",
+    "path": "/experiments/philippe",
     "git": "https://github.com/Gnirt/Three-js-experimentation.git"
   }
 ]
