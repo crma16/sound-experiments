@@ -18,6 +18,7 @@ export default class Sheet extends Component {
     Mediator.on('note:over', this.onNoteOver);
     Mediator.on('note:out', this.onNoteOut);
 
+    this.visible = false;
     this.tl = new TimelineMax();
     this.tlOut = new TimelineMax();
   }
@@ -27,14 +28,6 @@ export default class Sheet extends Component {
 
     this.$lines = this.$el.querySelectorAll('.Sheet-line');
     this.$notes = this.$el.querySelectorAll('.Note-point');
-
-    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0);
-    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.7);
-    this.tl.pause(0);
-
-    this.tlOut.staggerTo(this.$notes, 0.4, { scale: 0, ease: Expo.easeOut }, 0.06, 0);
-    this.tlOut.staggerTo(this.$lines, 0.9, { xPercent: 100, ease: Expo.easeOut }, 0.08, 0.4);
-    this.tlOut.pause(0);
   }
 
   parse() {
@@ -50,16 +43,25 @@ export default class Sheet extends Component {
   }
 
   transitionIn() {
+    if (this.visible) { return; }
+
     if (this.tlOut) { this.tlOut.kill(); }
 
-    this.tl.play(0);
+    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0);
+    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.7);
+
+    this.visible = true;
   }
 
   transitionOut(callback) {
+    if (!this.visible) { return; }
     if (this.tl) { this.tl.kill(); }
 
     this.tlOut.eventCallback('onComplete', callback);
-    this.tlOut.play(0);
+    this.tlOut.staggerTo(this.$notes, 0.4, { scale: 0, ease: Expo.easeOut }, 0.06, 0);
+    this.tlOut.staggerTo(this.$lines, 0.9, { xPercent: 100, ease: Expo.easeOut }, 0.08, 0.4);
+
+    this.visible = false;
   }
 
   onNoteOver(id) {

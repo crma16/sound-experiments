@@ -1,2 +1,11 @@
 .Home
   @extends .full-size
+
+  &-circleTransition
+    position absolute
+    width 14px
+    height @width
+    border-radius 50%
+    background $grey
+    z-index 1
+    transform scale(0)
