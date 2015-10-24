@@ -31,7 +31,7 @@ export default class Home extends Section {
   transitionIn(callback) {
     super.transitionIn(callback);
 
-    if (Config.get('previousRoute').indexOf('project') > -1) {
+    if (Config.get('previousRoute').indexOf('project') > -1 && Config.get('homeCircle')) {
       this.$circle.style.left = Config.get('homeCircle').x;
       this.$circle.style.top = Config.get('homeCircle').y;
       TweenMax.fromTo(this.$circle, 0.5, { scale: Config.get('homeCircle').scale }, { scale: 0, ease: Expo.easeOut }, 0);
@@ -44,9 +44,7 @@ export default class Home extends Section {
   }
 
   transitionOut(callback) {
-    if (Config.get('currentRoute') === 'about') {
-      this.refs.sheet.transitionOut(callback);
-    } else if (Config.get('currentRoute').indexOf('project') > -1) {
+    if (Config.get('currentRoute').indexOf('project') > -1) {
       const scaleX = 2 * window.innerWidth / this.$circle.offsetWidth;
       const scaleY = 2 * window.innerHeight / this.$circle.offsetHeight;
       const s = Math.max(scaleX, scaleY);
@@ -59,6 +57,8 @@ export default class Home extends Section {
 
       this.tlOut.eventCallback('onComplete', callback);
       this.tlOut.fromTo(this.$circle, 0.6, { scale: 0 }, { scale: s, ease: Expo.easeOut });
+    } else {
+      this.refs.sheet.transitionOut(callback);
     }
   }
 }

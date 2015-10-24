@@ -54,7 +54,6 @@ export default class Sheet extends Component {
   }
 
   transitionOut(callback) {
-    if (!this.visible) { return; }
     if (this.tl) { this.tl.kill(); }
 
     this.tlOut.eventCallback('onComplete', callback);
