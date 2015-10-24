@@ -69,8 +69,8 @@ export default class Router {
     this.previousPageId = this.getPageId(this.previousPath);
     this.currentPageId = this.getPageId(this.currentPath);
 
-    Config.set('currentRoute', this.currentPageId);
-    Config.set('previousRoute', this.previousPageId);
+    Config.set('currentRoute', this.currentPath);
+    Config.set('previousRoute', this.previousPath);
 
     Mediator.emit('route:change:start', this.currentPath, this.isFirstRoute);
     Mediator.off('route:change:done');
