@@ -19,7 +19,7 @@
     "name": "Shooting Star Equalizer",
     "author": "Jérémie BOULAY",
     "color": "#E2413E",
-    "url": "/experiments/jeremie-b/public",
+    "url": "/experiments/jeremie-b",
     "git": "https://github.com/Jeremboo/shootingStarEqualizer.git"
   },
   {
@@ -35,7 +35,7 @@
     "name": "ODESZA",
     "author": "Antoine CHARBONNIER",
     "color": "#E91222",
-    "url": "/experiments/antoine/public",
+    "url": "/experiments/antoine",
     "git": "https://github.com/AntoineCharbonnier/Workshop-three-js"
   },
   {
@@ -81,7 +81,7 @@
     "name": "EqualizR",
     "author": "Soufiane LASRI",
     "color": "#8706FF",
-    "url": "/experiments/soufiane/dist",
+    "url": "/experiments/soufiane",
     "git": "https://github.com/SoufianeLasri/EqualizR.git"
   },
   {
@@ -128,7 +128,7 @@
     "name": "Lorem ipsum",
     "author": "Guillaume ROUXEL",
     "color": "#E25CFE",
-    "url": "/experiments/guillaume/public",
+    "url": "/experiments/guillaume",
     "git": "https://github.com/guillaumerxl/equalizer.git"
   },
   {
