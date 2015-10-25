@@ -49,8 +49,12 @@ export default class Loader extends Component {
     } else if ($this.isLoad == false) {
       $this.isLoad = true;
       $this.tl.reverse(0, false);
-      $this.loadingComplete ();
-      $this.$intro.classList.remove('noComplete');
+
+      // CACA TOUT MOCHE
+      setTimeout(function () {
+        $this.loadingComplete ();
+        $this.$intro.classList.remove('noComplete');
+      }, 300);
     }
   }
 
