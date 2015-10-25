@@ -40,6 +40,7 @@ export default class Home extends Section {
     }
 
     Mediator.emit('header:transitionIn');
+    Mediator.emit('loader:transitionIn');
     Mediator.emit('footer:transitionIn');
   }
 
