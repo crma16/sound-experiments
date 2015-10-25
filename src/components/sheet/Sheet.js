@@ -8,7 +8,7 @@ export default class Sheet extends Component {
   constructor($el) {
     super($el);
 
-    bindAll(this, 'onResize', 'onNoteOver', 'onNoteOut');
+    bindAll(this, 'transitionIn','onResize', 'onNoteOver', 'onNoteOut');
 
     this.$lines;
     this.$notes;
@@ -17,6 +17,7 @@ export default class Sheet extends Component {
     resize.addListener(this.onResize);
     Mediator.on('note:over', this.onNoteOver);
     Mediator.on('note:out', this.onNoteOut);
+    Mediator.on('sheet:transitionIn', this.transitionIn);
 
     this.visible = false;
     this.tl = new TimelineMax();
@@ -28,6 +29,11 @@ export default class Sheet extends Component {
 
     this.$lines = this.$el.querySelectorAll('.Sheet-line');
     this.$notes = this.$el.querySelectorAll('.Note-point');
+
+    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0);
+    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.7);
+
+    this.tl.pause(0);
   }
 
   parse() {
@@ -46,10 +52,8 @@ export default class Sheet extends Component {
     if (this.visible) { return; }
 
     if (this.tlOut) { this.tlOut.kill(); }
-
-    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0);
-    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.7);
-
+    this.tl.play(0);
+    
     this.visible = true;
   }
 

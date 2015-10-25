@@ -3,6 +3,7 @@ import Mediator from 'lib/Mediator';
 import Config from 'lib/Config';
 import bindAll from 'lodash.bindAll';
 
+
 export default class Home extends Section {
   constructor($el) {
     super($el);
@@ -10,10 +11,10 @@ export default class Home extends Section {
     bindAll(this, 'onNoteClick');
 
     this.$circle = this.$el.querySelector('.Home-circleTransition');
-
     this.tlOut = new TimelineMax();
 
     Mediator.on('note:click', this.onNoteClick);
+    Mediator.emit('loader:transitionIn');
   }
 
   destroy() {
@@ -36,13 +37,12 @@ export default class Home extends Section {
       this.$circle.style.top = Config.get('homeCircle').y;
       TweenMax.fromTo(this.$circle, 0.5, { scale: Config.get('homeCircle').scale }, { scale: 0, ease: Expo.easeOut }, 0);
     } else {
-      this.refs.sheet.transitionIn();
+      if (Config.get('previousRoute') == 'about') {
+        this.refs.sheet.transitionIn(); 
+      }    
     }
-
-    Mediator.emit('header:transitionIn');
-    Mediator.emit('loader:transitionIn');
-    Mediator.emit('footer:transitionIn');
   }
+
 
   transitionOut(callback) {
     if (Config.get('currentRoute').indexOf('project') > -1) {

@@ -35,5 +35,4 @@ domready(() => {
     'about',
     'project/:name',
   ]);
-
 });
