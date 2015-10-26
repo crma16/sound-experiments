@@ -15,6 +15,7 @@ domready(() => {
     'View': require('layouts/view/View'),
     'Header': require('layouts/header/Header'),
     'Footer': require('layouts/footer/Footer'),
+    'WebglBackground': require('layouts/webgl-background/WebglBackground'),
     /* Sections */
     'Home': require('sections/home/Home'),
     'About': require('sections/about/About'),
