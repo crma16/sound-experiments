@@ -56,10 +56,11 @@
   },
   {
     "id": "jeremie-d",
-    "name": "Lorem ipsum",
+    "name": "The fall",
     "author": "Jérémie DRAZIC",
     "color": "#FC7D74",
-    "path": "/experiments/jeremie-d"
+    "path": "/experiments/jeremie-d",
+    "git": "https://github.com/JeremieDrazic/ThreeExperiment.git"
   },
   {
     "id": "kevin",
