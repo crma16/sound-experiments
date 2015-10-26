@@ -1,5 +1,6 @@
 import Component from 'lib/components/Component';
 import Mediator from 'lib/Mediator';
+import Config from 'lib/Config';
 import bindAll from 'lodash.bindAll';
 import resize from 'brindille-resize';
 import css from 'component-css';
@@ -8,7 +9,7 @@ export default class Sheet extends Component {
   constructor($el) {
     super($el);
 
-    bindAll(this, 'transitionIn','onResize', 'onNoteOver', 'onNoteOut');
+    bindAll(this, 'transitionIn', 'onResize', 'onNoteOver', 'onNoteOut');
 
     this.$lines;
     this.$notes;
@@ -30,20 +31,22 @@ export default class Sheet extends Component {
     this.$lines = this.$el.querySelectorAll('.Sheet-line');
     this.$notes = this.$el.querySelectorAll('.Note-point');
 
-    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0);
-    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.7);
-
-    this.tl.pause(0);
+    if (! Config.get('previousRoute') || Config.get('previousRoute').indexOf('project') === -1) {
+      this.setTimeline();
+    }
   }
 
-  parse() {
-    super.parse();
+  setTimeline() {
+    this.tl.staggerFromTo(this.$lines, 1.2, { xPercent: -100 }, { xPercent: 0, ease: Expo.easeInOut }, 0.08, 0);
+    this.tl.staggerFromTo(this.$notes, 0.6, { scale: 0 }, { scale: 1, ease: Cubic.easeOut }, 0.06, 0.7);
+    this.tl.pause(0);
   }
 
   destroy() {
     resize.removeListener(this.onResize);
     Mediator.off('note:over', this.onNoteOver);
     Mediator.off('note:out', this.onNoteOut);
+    Mediator.off('sheet:transitionIn', this.transitionIn);
 
     super.destroy();
   }
@@ -52,8 +55,9 @@ export default class Sheet extends Component {
     if (this.visible) { return; }
 
     if (this.tlOut) { this.tlOut.kill(); }
+
     this.tl.play(0);
-    
+
     this.visible = true;
   }
 

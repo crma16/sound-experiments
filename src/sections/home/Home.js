@@ -3,7 +3,6 @@ import Mediator from 'lib/Mediator';
 import Config from 'lib/Config';
 import bindAll from 'lodash.bindAll';
 
-
 export default class Home extends Section {
   constructor($el) {
     super($el);
@@ -36,10 +35,8 @@ export default class Home extends Section {
       this.$circle.style.left = Config.get('homeCircle').x;
       this.$circle.style.top = Config.get('homeCircle').y;
       TweenMax.fromTo(this.$circle, 0.5, { scale: Config.get('homeCircle').scale }, { scale: 0, ease: Expo.easeOut }, 0);
-    } else {
-      if (Config.get('previousRoute') == 'about') {
-        this.refs.sheet.transitionIn(); 
-      }    
+    } else if (Config.get('previousRoute') === 'about') {
+      this.refs.sheet.transitionIn();
     }
   }
 
