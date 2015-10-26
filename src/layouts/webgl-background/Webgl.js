@@ -11,15 +11,18 @@ export default class Webgl {
     };
 
     this.camera = new THREE.PerspectiveCamera(50, width / height, 1, 1000);
+    this.camera.position.y = 0;
     this.camera.position.z = 100;
 
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setSize(width, height);
-    this.renderer.setClearColor(0x262626);
+    this.renderer.setClearColor(0x000000);
 
     // this.composer = new WAGNER.Composer(this.renderer);
     // this.composer.setSize(width, height);
     this.initPostprocessing();
+
+    this.clock = new THREE.Clock(true);
 
     this.wave = new Wave();
     this.wave.position.set(0, 0, 0);
@@ -54,6 +57,8 @@ export default class Webgl {
       this.renderer.render(this.scene, this.camera);
     }
 
-    this.wave.update();
+    const t = this.clock.getElapsedTime();
+
+    this.wave.update(t);
   }
 }

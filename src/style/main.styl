@@ -21,12 +21,14 @@ body
   @extends .font-default-bold
   position relative
   margin 0
-  background url('/assets/images/background.jpg')
+  background black
   background-position 50% 50%
   background-size cover
   color white
-  overflow-x hidden
-  overflow-y scroll
+  overflow hidden
+
+  &.fail
+    background url('/assets/images/background.jpg')
 
 #symbols
   display none

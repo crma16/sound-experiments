@@ -13,6 +13,16 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.(glsl|frag|vert)$/,
+        loader: 'raw',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(glsl|frag|vert)$/,
+        loader: 'glslify',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.styl$/,
         loader: ExtractTextPlugin.extract('css-loader!stylus-loader'),
       },
