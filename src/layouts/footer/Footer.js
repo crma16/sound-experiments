@@ -28,6 +28,8 @@ export default class Footer extends Component {
   }
 
   onRouteChange(currentPath, currentPageId, content) {
+
+
     if (currentPath === 'home' || currentPath === 'about') {
       this.replaceContent(content.footer);
     }

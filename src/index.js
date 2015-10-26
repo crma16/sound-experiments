@@ -12,6 +12,7 @@ domready(() => {
 
   ComponentManager.registerMultiple({
     /* Layouts */
+    'Loader': require('layouts/loader/Loader'),
     'View': require('layouts/view/View'),
     'Header': require('layouts/header/Header'),
     'Footer': require('layouts/footer/Footer'),
@@ -35,5 +36,4 @@ domready(() => {
     'about',
     'project/:name',
   ]);
-
 });

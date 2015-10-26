@@ -43,3 +43,6 @@
 [submodule "data/experiments/philippe"]
 	path = data/experiments/philippe
 	url = https://github.com/Gnirt/Three-js-experimentation.git
+[submodule "data/experiments/jeremie-d"]
+	path = data/experiments/jeremie-d
+	url = https://github.com/JeremieDrazic/ThreeExperiment.git

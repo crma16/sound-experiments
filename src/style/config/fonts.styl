@@ -21,3 +21,21 @@ font-face('Didot italic', 'didot-italic', '/assets/fonts/didot/italic')
 .font-serif-italic
   font-family 'Didot italic'
   @extends .smooth-font
+
+// Ico Font
+
+font-face('icomoon', 'icomoon', '/assets/fonts/icofont')
+
+[class^="icon-"],[class*=" icon-"]
+  font-family: 'icomoon'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+ 
+
+.icon-icon_sound:before
+  content: "\e900"
+
