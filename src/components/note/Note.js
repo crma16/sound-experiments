@@ -69,23 +69,23 @@ export default class Note extends InteractiveComponent {
     
     switch(this.line) {
       case 1:
-        audio.src = '../assets/mp3/notes/note_sound.mp3';
+        audio.src = '../assets/mp3/notes/note_1.wav';
         break;
 
       case 2:
-        audio.src = '../assets/mp3/notes/02.mp3';
+        audio.src = '../assets/mp3/notes/note_2.wav';
         break;
 
       case 3:
-        audio.src = '../assets/mp3/notes/note_sound.mp3';
+        audio.src = '../assets/mp3/notes/note_3.wav';
         break;
 
       case 4:
-        audio.src = '../assets/mp3/notes/02.mp3';
+        audio.src = '../assets/mp3/notes/note_4.wav';
         break;
 
       case 5:
-        audio.src = '../assets/mp3/notes/note_sound.mp3';
+        audio.src = '../assets/mp3/notes/note_5.wav';
         break;
 
       default:
