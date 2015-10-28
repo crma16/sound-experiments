@@ -48,12 +48,11 @@
   },
   {
     "id": "robin",
-    "name": "Ass Hole",
+    "name": "Hole",
     "author": "Robin DELAPORTE",
     "color": "#42BBC9",
     "path": "/experiments/robin",
-    "git": "https://github.com/robin-dela/workshop-webgl.git",
-    "troll": "mouahahaha"
+    "git": "https://github.com/robin-dela/workshop-webgl.git"
   },
   {
     "id": "jeremie-d",

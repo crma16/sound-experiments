@@ -3,14 +3,13 @@ import Mediator from 'lib/Mediator';
 import { on, off } from 'dom-event';
 import bindAll from 'lodash.bindAll';
 
-let audio = new Audio();
-
 export default class Note extends InteractiveComponent {
   constructor($el) {
     super($el);
 
     bindAll(this, 'onClick');
 
+    this.audio = new Audio();
     this.$point = this.$el.querySelector('.Note-point');
     this.id = ~~this.$el.getAttribute('data-ref').replace('note-', '');
 
@@ -66,38 +65,38 @@ export default class Note extends InteractiveComponent {
 
   onMouseOver() {
     Mediator.emit('note:over', this.id);
-    
+
     switch(this.line) {
       case 1:
-        audio.src = '../assets/mp3/notes/note_1.wav';
+        this.audio.src = '../assets/mp3/notes/note_1.wav';
         break;
 
       case 2:
-        audio.src = '../assets/mp3/notes/note_2.wav';
+        this.audio.src = '../assets/mp3/notes/note_2.wav';
         break;
 
       case 3:
-        audio.src = '../assets/mp3/notes/note_3.wav';
+        this.audio.src = '../assets/mp3/notes/note_3.wav';
         break;
 
       case 4:
-        audio.src = '../assets/mp3/notes/note_4.wav';
+        this.audio.src = '../assets/mp3/notes/note_4.wav';
         break;
 
       case 5:
-        audio.src = '../assets/mp3/notes/note_5.wav';
+        this.audio.src = '../assets/mp3/notes/note_5.wav';
         break;
 
       default:
         break;
     }
 
-    audio.play();
+    this.audio.play();
   }
 
   onMouseOut() {
     Mediator.emit('note:out', this.id);
-    // audio.pause ();
-    // audio.currentTime = 0;
+    // this.audio.pause ();
+    // this.audio.currentTime = 0;
   }
 }
