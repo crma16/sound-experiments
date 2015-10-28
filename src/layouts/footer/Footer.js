@@ -1,6 +1,7 @@
 import Component from 'lib/components/Component';
 import Mediator from 'lib/Mediator';
 import bindAll from 'lodash.bindAll';
+import classes from 'dom-classes';
 
 export default class Footer extends Component {
   constructor($el) {
@@ -23,6 +24,7 @@ export default class Footer extends Component {
   transitionIn() {
     if (this.visible) { return; }
 
+    classes.remove(this.$el, 'hidden');
     this.tl.play(0);
     this.visible = true;
   }

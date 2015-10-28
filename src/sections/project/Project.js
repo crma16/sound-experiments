@@ -1,4 +1,5 @@
 import Section from 'lib/components/Section';
+import Mediator from 'lib/Mediator';
 
 export default class Project extends Section {
   constructor($el) {
@@ -22,10 +23,12 @@ export default class Project extends Section {
 
   transitionIn(callback) {
     super.transitionIn(callback);
+    Mediator.emit('project:open');
     this.tl.play(0);
   }
 
   transitionOut(callback) {
+    Mediator.emit('project:close');
     this.tlOut.eventCallback('onComplete', callback);
     this.tlOut.play(0);
   }
