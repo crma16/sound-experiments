@@ -97,7 +97,7 @@ export default class Note extends InteractiveComponent {
 
   onMouseOut() {
     Mediator.emit('note:out', this.id);
-    audio.pause ();
-    audio.currentTime = 0;
+    // audio.pause ();
+    // audio.currentTime = 0;
   }
 }

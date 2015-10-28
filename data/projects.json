@@ -24,7 +24,7 @@
   },
   {
     "id": "leo",
-    "name": "Lorem ipsum",
+    "name": "Blue Dimension",
     "author": "Léo BROSSAULT",
     "color": "#1488C8",
     "path": "/experiments/leo",
@@ -48,11 +48,12 @@
   },
   {
     "id": "robin",
-    "name": "Hole",
+    "name": "Ass Hole",
     "author": "Robin DELAPORTE",
     "color": "#42BBC9",
     "path": "/experiments/robin",
-    "git": "https://github.com/robin-dela/workshop-webgl.git"
+    "git": "https://github.com/robin-dela/workshop-webgl.git",
+    "troll": "mouahahaha"
   },
   {
     "id": "jeremie-d",
