@@ -142,9 +142,9 @@
   },
   {
     "id": "philippe",
-    "name": "Lorem ipsum",
+    "name": "It’s about you",
     "author": "Philippe TRING",
-    "color": "#81C82D",
+    "color": "#39c82d",
     "path": "/experiments/philippe",
     "git": "https://github.com/Gnirt/Three-js-experimentation.git"
   }
