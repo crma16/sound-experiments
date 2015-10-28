@@ -2,6 +2,7 @@ import 'style/main.styl';
 
 import Component from 'lib/components/Component';
 import ComponentManager from 'lib/ComponentManager';
+import AudioManager from 'lib/AudioManager';
 import Config from 'lib/Config';
 import Router from './Router';
 import domready from 'domready';
@@ -31,7 +32,15 @@ domready(() => {
   ComponentManager.setRootComponent(rootComponent);
   rootComponent.parse();
 
-  let router = new Router([
+  AudioManager.load([
+    { id: 'note_1', src: '/assets/mp3/notes/note_1.wav' },
+    { id: 'note_2', src: '/assets/mp3/notes/note_2.wav' },
+    { id: 'note_3', src: '/assets/mp3/notes/note_3.wav' },
+    { id: 'note_4', src: '/assets/mp3/notes/note_4.wav' },
+    { id: 'note_5', src: '/assets/mp3/notes/note_5.wav' },
+  ]);
+
+  const r = new Router([
     'home',
     'about',
     'project/:name',

@@ -50,9 +50,7 @@ export default class Loader extends Component {
       this.$loader.style.strokeDasharray = this.percent;
     } else if (this.isLoaded === false) {
       this.isLoaded = true;
-      // this.tl.reverse(0, false);
       this.tlOut.play(0);
-
       // TODO: plug to real loader
       setTimeout(this.loadingComplete, 300);
     }

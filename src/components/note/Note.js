@@ -1,5 +1,6 @@
 import InteractiveComponent from 'lib/components/InteractiveComponent';
 import Mediator from 'lib/Mediator';
+import AudioManager from 'lib/AudioManager';
 import { on, off } from 'dom-event';
 import bindAll from 'lodash.bindAll';
 
@@ -9,47 +10,39 @@ export default class Note extends InteractiveComponent {
 
     bindAll(this, 'onClick');
 
-    this.audio = new Audio();
     this.$point = this.$el.querySelector('.Note-point');
     this.id = ~~this.$el.getAttribute('data-ref').replace('note-', '');
 
     switch(this.id) {
-      case 7:
-        this.line = 1;
-        break;
-
-      case 10:
-      case 13:
-        this.line = 2;
-        break;
-
-      case 4:
-      case 5:
-      case 8:
-      case 11:
-      case 15:
-      case 17:
-        this.line = 3;
-        break;
-
-      case 2:
-      case 3:
-      case 12:
-      case 16:
-      case 19:
-        this.line = 4;
-        break;
-
-      case 1:
-      case 6:
-      case 9:
-      case 14:
-      case 18:
-        this.line = 5;
-        break;
-
-      default:
-        break;
+    case 7:
+      this.line = 5;
+      break;
+    case 10:
+    case 13:
+      this.line = 4;
+      break;
+    case 4:
+    case 5:
+    case 8:
+    case 11:
+    case 15:
+    case 17:
+      this.line = 3;
+      break;
+    case 2:
+    case 3:
+    case 12:
+    case 16:
+    case 19:
+      this.line = 2;
+      break;
+    case 1:
+    case 6:
+    case 9:
+    case 14:
+    case 18:
+      this.line = 1;
+      break;
     }
     on(this.$el, 'click', this.onClick);
   }
@@ -65,38 +58,11 @@ export default class Note extends InteractiveComponent {
 
   onMouseOver() {
     Mediator.emit('note:over', this.id);
-
-    switch(this.line) {
-      case 1:
-        this.audio.src = '../assets/mp3/notes/note_1.wav';
-        break;
-
-      case 2:
-        this.audio.src = '../assets/mp3/notes/note_2.wav';
-        break;
-
-      case 3:
-        this.audio.src = '../assets/mp3/notes/note_3.wav';
-        break;
-
-      case 4:
-        this.audio.src = '../assets/mp3/notes/note_4.wav';
-        break;
-
-      case 5:
-        this.audio.src = '../assets/mp3/notes/note_5.wav';
-        break;
-
-      default:
-        break;
-    }
-
-    this.audio.play();
+    AudioManager.getSound(`note_${this.line}`).currentTime = 0;
+    AudioManager.getSound(`note_${this.line}`).play();
   }
 
   onMouseOut() {
     Mediator.emit('note:out', this.id);
-    // this.audio.pause ();
-    // this.audio.currentTime = 0;
   }
 }
