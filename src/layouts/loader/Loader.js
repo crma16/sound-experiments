@@ -1,5 +1,6 @@
 import Component from 'lib/components/Component';
 import Mediator from 'lib/Mediator';
+import Config from 'lib/Config';
 import bindAll from 'lodash.bindAll';
 
 export default class Loader extends Component {
@@ -38,10 +39,15 @@ export default class Loader extends Component {
 
     this.$el.classList.add('noComplete');
 
-    this.tl.play(0);
+    if (!Config.get('previousRoute')) {
+      this.tl.play(0);
+      setInterval(this.loading, 100);
+    } else {
+      this.loadingComplete();
+    }
+
     this.visible = true;
 
-    setInterval(this.loading, 100);
   }
 
   loading() {

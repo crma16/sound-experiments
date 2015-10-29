@@ -19,7 +19,7 @@ export default class Wave extends THREE.Object3D {
     this.geometry = new THREE.BufferGeometry();
 
     this.loader = new THREE.TextureLoader();
-    this.loader.load('assets/images/particle2.png', this.onTextureLoaded);
+    this.loader.load('/assets/images/particle2.png', this.onTextureLoaded);
   }
 
   onTextureLoaded(texture) {
