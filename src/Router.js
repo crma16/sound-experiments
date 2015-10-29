@@ -2,6 +2,7 @@ import page from 'page';
 import bindAll from 'lodash.bindall';
 import Mediator from 'lib/Mediator';
 import Config from 'lib/Config';
+import request from 'superagent';
 
 export default class Router {
   constructor(routes, defaultRoute) {
@@ -81,12 +82,11 @@ export default class Router {
       return;
     }
 
-    fetch(Config.get('rootUrl') + '?c=1&p=/' + this.currentPath)
-      .then((response) => {
-        // parse JSON
-        return response.json();
-      }).then((data) => {
-        this.content = data;
+    request.get(Config.get('rootUrl') + '?c=1&p=/' + this.currentPath)
+      .end((err, res) => {
+        if (err) { console.error(err); }
+
+        this.content = JSON.parse(res.text);
         next();
       });
   }

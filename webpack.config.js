@@ -2,7 +2,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer-stylus');
 var path = require('path');
 var fontFace = require('stylus-font-face');
-var webpack = require('webpack');
 
 module.exports = {
   entry: path.join(__dirname, '/src/index.js'),
@@ -60,9 +59,5 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('main.css'),
-    new webpack.ProvidePlugin({
-      'Promise': 'es6-promise',
-      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-    }),
   ],
 };
