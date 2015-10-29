@@ -52,6 +52,7 @@ export default class ProjectTitle extends Component {
     this.tlIn.fromTo(this.$author, 1.2, { x: -290 * dir }, { x: 2, ease: Cubic.easeOut }, 0.5);
     this.tlIn.fromTo(this.$number, 0.6, { x: 45 * dir }, { x: 0, ease: Cubic.easeOut }, 0.75);
     this.tlIn.fromTo(this.$title, 0.8, { x: -150 * dir, alpha: 0 }, { x: 2, alpha: 1, ease: Cubic.easeOut }, 0.85);
+    this.tlIn.timeScale(1.5);
     this.tlIn.pause(0);
 
     this.tlOut.to(this.$author, 1.0, { x: -290 * dir, ease: Cubic.easeOut }, 0);
