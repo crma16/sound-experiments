@@ -67,7 +67,8 @@
     "name": "Lorem ipsum",
     "author": "Kévin HANIR",
     "color": "#B65E29",
-    "path": "/experiments/kevin"
+    "path": "/experiments/kevin",
+    "git": "https://github.com/thnadar0/webgl.git"
   },
   {
     "id": "chloe",
@@ -79,7 +80,7 @@
   },
   {
     "id": "soufiane",
-    "name": "EqualizR",
+    "name": "Flow-R",
     "author": "Soufiane LASRI",
     "color": "#8706FF",
     "path": "/experiments/soufiane",

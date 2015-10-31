@@ -46,3 +46,6 @@
 [submodule "data/experiments/jeremie-d"]
 	path = data/experiments/jeremie-d
 	url = https://github.com/JeremieDrazic/ThreeExperiment.git
+[submodule "data/experiments/kevin"]
+	path = data/experiments/kevin
+	url = https://github.com/thnadar0/webgl.git
