@@ -64,7 +64,7 @@
   },
   {
     "id": "kevin",
-    "name": "Lorem ipsum",
+    "name": "Street line",
     "author": "Kévin HANIR",
     "color": "#B65E29",
     "path": "/experiments/kevin",
@@ -120,7 +120,7 @@
   },
   {
     "id": "arthur",
-    "name": "Lorem ipsum",
+    "name": "Spline",
     "author": "Arthur ROBERT",
     "color": "#CFBA7A",
     "path": "/experiments/arthur"
