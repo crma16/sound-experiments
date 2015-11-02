@@ -1,10 +1,11 @@
 [
   {
     "id": "ludovic",
-    "name": "Lorem ipsum",
+    "name": "2001",
     "author": "Ludovic ATMADJIAN",
     "color": "#006962",
-    "path": "/experiments/ludovic"
+    "path": "/experiments/ludovic",
+    "git": "https://github.com/Moutardentube/webgl_2001.git"
   },
   {
     "id": "mathis",
@@ -135,7 +136,7 @@
   },
   {
     "id": "madjid",
-    "name": "Musical foetus",
+    "name": "Suki",
     "author": "Madjid TAHA",
     "color": "#EE2378",
     "path": "/experiments/madjid",

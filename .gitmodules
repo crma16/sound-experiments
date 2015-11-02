@@ -52,3 +52,6 @@
 [submodule "data/experiments/arthur"]
 	path = data/experiments/arthur
 	url = https://github.com/tournevis/threejsWork.git
+[submodule "data/experiments/ludovic"]
+	path = data/experiments/ludovic
+	url = https://github.com/Moutardentube/webgl_2001.git
