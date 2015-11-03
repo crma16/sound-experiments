@@ -15,7 +15,8 @@ export default class Footer extends Component {
     this.visible = false;
 
     this.tl = new TimelineMax();
-    this.tl.staggerFromTo(this.$el.querySelectorAll('.Footer-social li, .Footer-about'), 0.8, { y: 100, alpha: 0 }, { y: 0, alpha: 1, ease: Expo.easeOut }, 0.08, 0.7);
+    this.tl.staggerFromTo(this.$el.querySelectorAll('.Footer-social li,  .Footer-about'), 0.8, { y: 100, alpha: 0 }, { y: 0, alpha: 1, ease: Expo.easeOut }, 0.08, 0.7);
+    this.tl.fromTo(this.$el.querySelector('.Footer-gobelins'), 0.6, { y: 100, alpha: 0 }, { y: 0, alpha: 0.3, ease: Expo.easeOut }, 0.85);
     this.tl.pause(0);
   }
 
